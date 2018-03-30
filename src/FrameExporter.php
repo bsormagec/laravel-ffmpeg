@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbmedia\LaravelFFMpeg;
+namespace Sormagec\LaravelFFMpeg;
 
 class FrameExporter extends MediaExporter
 {

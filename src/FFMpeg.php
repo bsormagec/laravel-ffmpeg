@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbmedia\LaravelFFMpeg;
+namespace Sormagec\LaravelFFMpeg;
 
 use FFMpeg\FFMpeg as BaseFFMpeg;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;

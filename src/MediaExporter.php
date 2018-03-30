@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbmedia\LaravelFFMpeg;
+namespace Sormagec\LaravelFFMpeg;
 
 use FFMpeg\Format\FormatInterface;
 

@@ -33,13 +33,13 @@ Add the Service Provider and Facade to your ```app.php``` config file if you're 
 
 'providers' => [
     ...
-    Pbmedia\LaravelFFMpeg\FFMpegServiceProvider::class,
+    Sormagec\LaravelFFMpeg\FFMpegServiceProvider::class,
     ...
 ];
 
 'aliases' => [
     ...
-    'FFMpeg' => Pbmedia\LaravelFFMpeg\FFMpegFacade::class
+    'FFMpeg' => Sormagec\LaravelFFMpeg\FFMpegFacade::class
     ...
 ];
 ```
@@ -47,7 +47,7 @@ Add the Service Provider and Facade to your ```app.php``` config file if you're 
 Publish the config file using the artisan CLI tool:
 
 ``` bash
-php artisan vendor:publish --provider="Pbmedia\LaravelFFMpeg\FFMpegServiceProvider"
+php artisan vendor:publish --provider="Sormagec\LaravelFFMpeg\FFMpegServiceProvider"
 ```
 
 ## Usage
@@ -240,7 +240,7 @@ $exporter = FFMpeg::open('steve_howe.mp4')
 The Media object you get when you 'open' a file, actually holds the Media object that belongs to the [underlying driver](https://github.com/PHP-FFMpeg/PHP-FFMpeg). It handles dynamic method calls as you can see [here](https://github.com/pascalbaljetmedia/laravel-ffmpeg/blob/master/src/Media.php#L114-L117). This way all methods of the underlying driver are still available to you.
 
 ```php
-// This gives you an instance of Pbmedia\LaravelFFMpeg\Media
+// This gives you an instance of Sormagec\LaravelFFMpeg\Media
 $media = FFMpeg::fromDisk('videos')->open('video.mp4');
 
 // The 'getStreams' method will be called on the underlying Media object since
@@ -251,7 +251,7 @@ $codec = $media->getStreams()->first()->get('codec_name');
 If you want direct access to the underlying object, call the object as a function (invoke):
 
 ```php
-// This gives you an instance of Pbmedia\LaravelFFMpeg\Media
+// This gives you an instance of Sormagec\LaravelFFMpeg\Media
 $media = FFMpeg::fromDisk('videos')->open('video.mp4');
 
 // This gives you an instance of FFMpeg\Media\MediaTypeInterface

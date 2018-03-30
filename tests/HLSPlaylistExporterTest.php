@@ -1,14 +1,14 @@
 <?php
 
-namespace Pbmedia\LaravelFFMpeg\Tests;
+namespace Sormagec\LaravelFFMpeg\Tests;
 
 use FFMpeg\Filters\Audio\SimpleFilter;
 use FFMpeg\Format\AudioInterface;
 use FFMpeg\Media\Audio;
 use Mockery;
-use Pbmedia\LaravelFFMpeg\HLSPlaylistExporter;
-use Pbmedia\LaravelFFMpeg\Media;
-use Pbmedia\LaravelFFMpeg\SegmentedExporter;
+use Sormagec\LaravelFFMpeg\HLSPlaylistExporter;
+use Sormagec\LaravelFFMpeg\Media;
+use Sormagec\LaravelFFMpeg\SegmentedExporter;
 
 class HLSPlaylistExporterTest extends TestCase
 {

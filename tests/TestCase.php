@@ -1,6 +1,6 @@
 <?php
 
-namespace Pbmedia\LaravelFFMpeg\Tests;
+namespace Sormagec\LaravelFFMpeg\Tests;
 
 use Illuminate\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Filesystem\Factory as Filesystems;
@@ -11,7 +11,7 @@ use League\Flysystem\Adapter\Local;
 use League\Flysystem\Filesystem as Flysystem;
 use Mockery;
 use Monolog\Logger;
-use Pbmedia\LaravelFFMpeg\FFMpeg;
+use Sormagec\LaravelFFMpeg\FFMpeg;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
 class TestCase extends PHPUnitTestCase

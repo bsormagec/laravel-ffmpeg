@@ -1,10 +1,10 @@
 <?php
 
-namespace Pbmedia\LaravelFFMpeg\Tests;
+namespace Sormagec\LaravelFFMpeg\Tests;
 
 use Mockery;
-use Pbmedia\LaravelFFMpeg\Frame;
-use Pbmedia\LaravelFFMpeg\FrameExporter;
+use Sormagec\LaravelFFMpeg\Frame;
+use Sormagec\LaravelFFMpeg\FrameExporter;
 
 class FrameTest extends TestCase
 {

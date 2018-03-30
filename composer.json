@@ -7,12 +7,10 @@
     ],
     "homepage": "https://github.com/sormagec/laravel-ffmpeg",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Burak Sormageç",
-            "email": "burak@sormagec.com"
-        }
-    ],
+    "authors": [{
+        "name": "Burak Sormageç",
+        "email": "burak@sormagec.com"
+    }],
     "require": {
         "php": "^7.1",
         "illuminate/config": "5.5.*",
@@ -28,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pbmedia\\LaravelFFMpeg\\": "src"
+            "Sormagec\\LaravelFFMpeg\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pbmedia\\LaravelFFMpeg\\Tests\\": "tests"
+            "Sormagec\\LaravelFFMpeg\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pbmedia\\LaravelFFMpeg\\FFMpegServiceProvider"
+                "Sormagec\\LaravelFFMpeg\\FFMpegServiceProvider"
             ],
             "aliases": {
-                "FFMpeg": "Pbmedia\\LaravelFFMpeg\\FFMpegFacade"
+                "FFMpeg": "Sormagec\\LaravelFFMpeg\\FFMpegFacade"
             }
         }
     }
