@@ -19,7 +19,7 @@
         "illuminate/filesystem": "5.5.*",
         "illuminate/log": "5.5.*",
         "league/flysystem": "~1.0",
-        "sormagec/php-ffmpeg": "~0.14.0",
+        "sormagec/php-ffmpeg": "~0.15.0",
         "symfony/process": "^4.0|^3.0"
     },
     "require-dev": {
